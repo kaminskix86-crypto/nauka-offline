@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application' version '8.3.0'
+}
+
+android {
+    namespace 'pl.nauka.offline'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "pl.nauka.offline"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
